@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                JS TicTacToe
+            </h1>
+            <p class="subtitle">
+                written by Matthew McCarty
+            </p>
+        </div>
+    </section>
+    <h1 id="declareWinner" class="declareWinner">
+    </h1>
+    <section class="section">
+        <div class="container">
+            <div class="GameBoard">
+                <div id="squareHolder" class="columns is-multiline">
+                    <div id="1" class="column is-one-third"></div>
+                    <div id="2" class="column is-one-third"></div>
+                    <div id="3" class="column is-one-third"></div>
+                    <div id="4" class="column is-one-third"></div>
+                    <div id="5" class="column is-one-third"></div>
+                    <div id="6" class="column is-one-third"></div>
+                    <div id="7" class="column is-one-third"></div>
+                    <div id="8" class="column is-one-third"></div>
+                    <div id="9" class="column is-one-third"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="NameHolder">
+            <div  class="PlayerHolder1">
+                <h1 id="playerName1" class="playerName">Player 1</h1>
+            </div>
+            <div class="PlayerHolder2">
+                <h1 id="playerName2" class="playerName">Player 2</h1>
+            </div>
+        </div>
+        <div class="NameHolder">
+            <button id="playButton" class="playButton">Play</button>
+        </div>
+
+    </section>
+
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <button class="delete is-danger" id="ModalClose"></button>
+            <div class="field">
+                <label class="label">Player 1 Name</label>
+                <div class="control">
+                    <input class="input" id="player1Input" type="text" placeholder="Who's player 1?">
+                </div>
+          </div>
+          <div class="field">
+            <label class="label">Player 2 Name</label>
+            <div class="control">
+                <input class="input" id="player2Input" type="text" placeholder="Who's player 2?">
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                  <button id="Submit" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light" id="ModalClose">Cancel</button>
+                </div>
+              </div>
+    </div>
+
+
+
+
+
+    <script src="js/TicTacToe.js" async defer></script>
+</body>
+
+</html>
